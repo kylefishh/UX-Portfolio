@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(1, 6, 16, 0.842),rgba(2, 29, 83, 0.823)),
+    url(images/bg.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.logo img{
+    background: transparent;
+    width: 140px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(13, 217, 231);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+     
+}
+
+.text-box{ 
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ; 
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px; 
+    font-size: 14px; 
+    color: #fff;
+}
+
+.landing_page_button{ 
+    display: inline-block; 
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgb(13, 217, 231);
+    padding: 12px 34px; 
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.landing_page_button:hover{
+    border: 1px solid rgb(231, 129, 13);
+    background: rgb(231, 129, 13);
+    transition: 1s;
+    
+}
+
+/*--- facts  page ---*/
+
+.facts{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 39px;
+    font-weight: 600;
+    
+}
+
+p1{
+    color: rgb(90, 90, 90);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
+}
+
+p2{
+    color: rgb(226, 226, 226);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.facts_col{
+    flex-basis: 31%;
+    background: rgba(1, 27, 80, 0.957);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+    color:rgb(226, 226, 226);
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.facts_col:hover{
+    box-shadow: 15px 0 30px 0px rgba(1, 6, 16, 0.842);
+    /*background: linear-gradient(rgba(250, 250, 250, 0.842),rgba(1, 6, 16, 0.842));
+    background: linear-gradient(rgba(250, 250, 250, 0.948),rgba(1, 27, 80, 0.842));*/
+    transition: 0.55s;
+}
+
+
+/*----- Gallery -----*/
+.gallery{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+
+}
+
+.gallery_col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery_col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+
+
+
+.gallery .landing_page_button{
+    color: black;
+    margin-bottom: 55px;
+    border-color: rgba(1, 6, 16, 0.842);
+}
+
+
+/*----- nyse page 2 ----*/
+
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(1, 6, 16, 0.842),rgba(2, 29, 83, 0.823)),
+    url(images/back_pg2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.top_choice{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+
+}
+
+.top_choice_col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top_choice_col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    image-resolution: 100%;
+
+   
+
+}
+
+.text-box-nyse{ 
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) ; 
+    text-align: left;
+    margin-top: 15%;
+}
+
+.text-box-nyse h1 {
+    font-size: 50px;
+
+}
+
+.text-box-nyse p{
+    margin: 30px 0; 
+    font-size: 17px; 
+    color: #fff;
+    line-height: 29px;
+}
+.text-box-nyse p2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+
+
+}
+
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    /*background: rgba(231, 129, 13, 0.587);*/
+    background: rgba(2, 29, 83, 0.707);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgba(248, 248, 248, 0.939);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----- history page 3 ----*/
+
+.header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(1, 6, 16, 0.842),rgba(166, 168, 172, 0.389)),
+    url(images/history_back.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box-history{ 
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ; 
+    text-align: center;
+}
+
+.text-box-history h1 {
+    font-size: 50px;
+
+}
+
+.text-box-history p{
+     margin: 10px 0 40px; 
+    font-size: 17px; 
+    color: #fff;
+}
+.text-box-history p2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+
+
+}
+
+
+.history-snips{
+
+    margin: 0;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    background-image: linear-gradient(95deg, rgba(0, 0, 0, 0.957),rgba(69, 78, 86, 0.744), transparent)
+    ,url(images/timeline.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hist-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 30px;
+    width: 90%;
+    text-align: center;
+    color: rgb(226, 226, 226);
+    line-height: 28px;
+
+    
+}
+
+.column {
+    width: 48%;
+    background-color: rgba(174, 174, 174, 0.3);
+    backface-visibility: visible;
+    border-radius: 10px;
+}
+
+.column p{
+    
+    text-align: center;
+    margin-top: 10px;
+    line-height: 32px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.column img{
+    display: block;
+    margin: 0;
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 0%;
+    height: 100%;
+
+    justify-items: center;
+    border-style: ridge;
+    border-color: black;
+    
+    background-color: black;
+    box-shadow: 100px;
+    
+
+}
+
+/*----- people page 4 ----*/
+
+.header-4{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(1, 6, 16, 0.842),rgba(2, 29, 83, 0.615)),
+    url(images/wolf.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-4 h1{
+    font-size: 57px;
+}
+
+.header-4 p{
+
+    font-size: 15px;
+}
+
+.celebs{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image:linear-gradient(rgba(1, 6, 16, 0.696),rgba(16, 16, 18, 0.615)),
+    url(images/money.png);
+
+}
+
+.celebs-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.celebs-col:hover{
+    background-image: linear-gradient(rgba(203, 205, 210, 0.842),rgba(1, 6, 16, 0.199)),url(images/money.png);
+    box-shadow: 30px 0 30px 0px rgba(1, 6, 16, 0.842);
+    transition: 0.5s;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+
+
+.celebs-col img {
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+
+.celebs-col h3{
+    color: rgb(226, 226, 226);
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.celebs h1{
+
+    color: rgb(226, 226, 226);
+    font-size: 45px;
+}
+
+.celebs p{
+    color: rgba(227, 224, 224, 0.964);
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 30px;
+    background-color: rgba(137, 137, 137, 0.635);
+    border-radius: 10px;
+    height: auto;
+}
+.celebs p1{
+    color: rgba(227, 224, 224, 0.964) ;
+    
+}
+
+/*----- analytics page 5 ----*/
+
+
+.header5{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(1, 6, 16, 0.842),rgba(2, 29, 83, 0.823)),
+    url(images/bvb4.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.stocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+   
+  }
+  
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    background-image:linear-gradient(rgba(228, 17, 17, 0.93));
+    padding: 15px;
+
+  }
+  
+  .stock-logo img {
+    max-width: 100px; /* Adjust the max-width as needed */
+    margin-right: 15px;
+  }
+  
+  .stock-info img {
+    max-width: 400px; /* Adjust the max-width as needed */
+    border-radius: 15px;
+  }
+  
+  .description {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .description p {
+    font-size: 16px;
+  }
+  
+  .description p2{
+    color: rgb(27, 152, 8);
+  }
+
+.stocks h1{
+    padding: 15px
+}
+
+
+
+
+
+
+
